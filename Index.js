@@ -1,4 +1,10 @@
-
+/** @jsx Didact.createElement */
+const element = (
+    <div id="foo">
+      <a>bar</a>
+      <b />
+    </div>
+  )
 
 function createElement(type, props, ...children) {
   return {
@@ -25,3 +31,17 @@ function createTextElement(text) {
       },
     }
   }
+
+const Ragnar = {
+    createElement
+}
+
+const element = Ragnar.createElement(
+"div",
+{ id: "foo" },
+Ragnar.createElement("a", null, "bar"),
+Ragnar.createElement("b")
+)
+
+const container = document.getElementById("root")
+Ragnar.render(element, container)
