@@ -1,4 +1,4 @@
-const TEXT_ELEMENT = "TEXT";
+export const TEXT_ELEMENT = "TEXT";
 
 /**
  * @param {string} type - the node type

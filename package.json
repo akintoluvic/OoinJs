@@ -1,0 +1,11 @@
+{
+  "name": "OoinJs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/akintoluvic/OoinJs.git",
+  "author": "Vick Greenfields <akintoluvic@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^2.16.1"
+  }
+}
