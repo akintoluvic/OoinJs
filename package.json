@@ -5,6 +5,12 @@
   "repository": "https://github.com/akintoluvic/OoinJs.git",
   "author": "Vick Greenfields <akintoluvic@users.noreply.github.com>",
   "license": "MIT",
+  "scripts": {
+    "build:module": "rollup src/Ooin.js -f es --exports named -n Ooin -o dist/Ooin.es.js",
+    "build:main": "rollup src/Ooin.js -f umd --exports named -n Ooin -o dist/Ooin.umd.js",
+    "build:all": "yarn build:module && yarn build:main",
+    "prepublishOnly": "yarn build:all"
+  },
   "devDependencies": {
     "rollup": "^2.16.1"
   }
