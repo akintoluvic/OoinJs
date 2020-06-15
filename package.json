@@ -1,18 +1,34 @@
 {
-  "name": "OoinJs",
-  "version": "1.0.0",
-  "main": "main/Ooin.js",
-  "repository": "https://github.com/akintoluvic/OoinJs.git",
-  "author": "Vick Greenfields <akintoluvic@users.noreply.github.com>",
-  "license": "MIT",
+  "name": "ooin-js",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
   "scripts": {
     "start": "react-scripts start",
-    "build:module": "rollup src/Ooin.js -f es --exports named -n Ooin -o dist/Ooin.es.js",
-    "build:main": "rollup src/Ooin.js -f umd --exports named -n Ooin -o dist/Ooin.umd.js",
-    "build:all": "yarn build:module && yarn build:main",
-    "prepublishOnly": "yarn build:all"
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "rollup": "^2.16.1"
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
