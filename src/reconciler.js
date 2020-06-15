@@ -1,2 +1,4 @@
+const { render } = require("./Ooin")
+
 const root = document.getElementById("root")
-ReactDom.render(<Component />, root)
+ReactDom.render(element, root)
