@@ -1,11 +1,12 @@
 {
   "name": "OoinJs",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main/Ooin.js",
   "repository": "https://github.com/akintoluvic/OoinJs.git",
   "author": "Vick Greenfields <akintoluvic@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
+    "start": "react-scripts start",
     "build:module": "rollup src/Ooin.js -f es --exports named -n Ooin -o dist/Ooin.es.js",
     "build:main": "rollup src/Ooin.js -f umd --exports named -n Ooin -o dist/Ooin.umd.js",
     "build:all": "yarn build:module && yarn build:main",
