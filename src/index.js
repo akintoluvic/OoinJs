@@ -261,15 +261,15 @@ function reconcileChildren(wipFiber, elements) {
   }
 }
 
-const Didact = {
+const Ooin = {
   createElement,
   render,
   useState
 };
 
-/** @jsx Didact.createElement */
+/** @jsx Ooin.createElement */
 function Counter() {
-  const [state, setState] = Didact.useState(1);
+  const [state, setState] = Ooin.useState(1);
   return (
     <h1 onClick={() => setState(c => c + 1)} style="user-select: none">
       Count: {state}
@@ -278,4 +278,4 @@ function Counter() {
 }
 const element = <Counter />;
 const container = document.getElementById("root");
-Didact.render(element, container);
+Ooin.render(element, container);
