@@ -272,9 +272,12 @@ import './index.css'
 function Counter() {
   const [state, setState] = Ooin.useState(1);
   return (
-    <h1 onClick={() => setState(c => c + 1)} style="user-select: none">
-      Counter: {state}
-    </h1>
+    <div className="ooin">
+      <h1 className="big">Ooin Js is Live</h1>
+      <h1 onClick={() => setState(c => c + 1)} style="user-select: none">
+        Counter: {state}
+      </h1>
+    </div>
   );
 }
 const element = <Counter />;

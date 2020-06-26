@@ -5,3 +5,11 @@ body {
     align-items: center;
     height: 100vh;
 }
+
+.ooin {
+    text-align: center;
+}
+
+.big {
+    font-size: 100px;
+}
