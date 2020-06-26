@@ -5,6 +5,12 @@
   "description": "",
   "main": "index.js",
   "dependencies": {},
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
   "scripts": {
     "start": "webpack --mode production"
   },
