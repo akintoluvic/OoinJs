@@ -12,7 +12,7 @@
     ]
   },
   "scripts": {
-    "start": "webpack --mode production"
+    "start": "webpack"
   },
   "keywords": [],
   "author": "",
